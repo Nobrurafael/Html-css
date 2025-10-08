@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Poiret+One&display=swap');
+@font-face {
+    font-family: 'externa1';
+    src: url('fonts/SpiritFox.otf') format('opentype');
+}
+
+
+body {
+    background-color: #0639e2ad;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: justify;
+    padding: 15px;
+}
+
+#principal {
+    text-shadow: 5px 5px 5px white;
+    font-family: 'externa1', Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-align: center;
+    color: black;
+}
+
+#destaque {
+    font-size: 3em;
+    font-family: 'Poiret One';
+    color: rgb(31, 7, 116);
+}
+
+.secundario {
+    font-family: 'Poiret One';
+    font-size: 2em;
+}
+
+main {
+    width: 700px;
+    background-color: rgb(156, 156, 156);
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 3px black;
+}
+
+       

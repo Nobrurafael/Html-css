@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo exemplo</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        div:hover {
+            color: rgb(238, 7, 7);
+        }
+        div:hover > p{
+            display: block;
+            color: aqua;
+            background-color: black;
+            width: 500px;
+            text-align: center;
+        }
+         
+        div > p {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 3em;">Teste por conta propria</h1>
+    Passe o mouse no texto abaixo
+    <div>
+        Passe o mouse aqui
+        <p>'Ola usuário!'</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>
