@@ -4,22 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela grande</title>
+    <title>Tabela grande — todos os estados</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
-            width: 400px;
+            width: 600px;
             border-collapse: collapse;
             margin: auto;
             margin-top: 50px;
+            position: relative;
         }
 
         thead {
             background-color: rgb(126, 126, 126);
             color: rgba(255, 255, 255, 0.849);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:  rgb(126, 126, 126);
         }
 
         td, th {
@@ -39,6 +46,15 @@
         td.final-num {
             text-align: center;
         }
+
+        th:first-child, td:first-child {
+            width: 50px;
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
     </style>
 </head>
 
@@ -46,53 +62,46 @@
     <table>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade Federativa</th>
-                <th class="num">População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" class="num">População</th>
             </tr>
         </thead>
 
         <tbody>
-            <tr>
-                <td>1</td>      
-                <td>São Paulo</td>
-                <td class="num">50.000.00</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Minas Gerais</td>
-                <td class="num">40.000.00</td>
-            </tr>
-
-            <tr>
-                <td>3</td>
-                <td>Rio de Janeiro</td>
-                <td class="num">30.000.00</td>
-            </tr>
-
-            <tr>
-                <td>4</td>
-                <td>Bahia</td>
-                <td class="num">20.000.00</td>
-            </tr>
-
-            <tr>
-                <td>5</td>
-                <td>Maceió</td>
-                <td class="num">15.000.00</td>
-            </tr>
-
-            <tr>
-                <td>6</td>
-                <td>Ceará</td>
-                <td class="num">12.000.00</td>
-            </tr>
+            <tr><td>1</td><td>São Paulo</td><td class="num">46.081.801</td></tr>
+            <tr><td>2</td><td>Minas Gerais</td><td class="num">21.393.441</td></tr>
+            <tr><td>3</td><td>Rio de Janeiro</td><td class="num">17.223.547</td></tr>
+            <tr><td>4</td><td>Bahia</td><td class="num">14.870.907</td></tr>
+            <tr><td>5</td><td>Paraná</td><td class="num">11.890.517</td></tr>
+            <tr><td>6</td><td>Rio Grande do Sul</td><td class="num">11.233.263</td></tr>
+            <tr><td>7</td><td>Pernambuco</td><td class="num">9.562.007</td></tr>
+            <tr><td>8</td><td>Ceará</td><td class="num">9.268.836</td></tr>
+            <tr><td>9</td><td>Pará</td><td class="num">8.711.196</td></tr>
+            <tr><td>10</td><td>Santa Catarina</td><td class="num">8.187.029</td></tr>
+            <tr><td>11</td><td>Goiás</td><td class="num">7.423.629</td></tr>
+            <tr><td>12</td><td>Maranhão</td><td class="num">7.018.211</td></tr>
+            <tr><td>13</td><td>Amazonas</td><td class="num">4.321.616</td></tr>
+            <tr><td>14</td><td>Paraíba</td><td class="num">4.164.468</td></tr>
+            <tr><td>15</td><td>Espírito Santo</td><td class="num">4.126.854</td></tr>
+            <tr><td>16</td><td>Mato Grosso</td><td class="num">3.893.659</td></tr>
+            <tr><td>17</td><td>Rio Grande do Norte</td><td class="num">3.455.236</td></tr>
+            <tr><td>18</td><td>Piauí</td><td class="num">3.384.547</td></tr>
+            <tr><td>19</td><td>Alagoas</td><td class="num">3.220.848</td></tr>
+            <tr><td>20</td><td>Mato Grosso do Sul</td><td class="num">2.924.631</td></tr>
+            <tr><td>21</td><td>Distrito Federal</td><td class="num">2.996.899</td></tr>
+            <tr><td>22</td><td>Sergipe</td><td class="num">2.299.425</td></tr>
+            <tr><td>23</td><td>Rondônia</td><td class="num">1.751.950</td></tr>
+            <tr><td>24</td><td>Tocantins</td><td class="num">1.586.859</td></tr>
+            <tr><td>25</td><td>Acre</td><td class="num">884.372</td></tr>
+            <tr><td>26</td><td>Amapá</td><td class="num">806.517</td></tr>
+            <tr><td>27</td><td>Roraima</td><td class="num">738.772</td></tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td colspan="2" class="final-num"><strong>100.000.000</strong></td>
+                <th style="width: 500px;" scope="row">Total de habitantes</th>
+                <td colspan="2" class="final-num"><strong>213.421.037</strong></td>
             </tr>
         </tfoot>
 
